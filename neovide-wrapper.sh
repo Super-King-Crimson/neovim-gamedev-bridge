@@ -1,2 +1,2 @@
 #!/bin/bash
- bash -i "/ln-neovide.sh" "$@"
+bash -i -c neovide "$@"
