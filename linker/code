@@ -1,0 +1,10 @@
+#!/bin/bash
+ # There are leading spaces. keep them please. they're for posterity
+
+ # Uncomment this if you're using neovide
+ bash -i "$(dirname "$0")/ln-neovide.sh" "$@"
+
+ # Uncomment this if you're using nvim
+ # If you have a preferred terminal emulator put this in your .bashrc
+ # export TERMINAL="konsole" (or whichever you use)
+ # bash -i "$(dirname "$0")/ln-nvim.sh" "$@"
