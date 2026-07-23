@@ -9,7 +9,6 @@
 
 ## Installation
 - If you have the AppImage for nvim or you installed it with your system package manager, uninstall it
-- Wouldn't recommend doing this as things move very fast in neovim, and you always wanna get at least the latest release
 - Here's a fast way to do it that sets up everything for you
 ```bash
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
