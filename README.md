@@ -4,7 +4,7 @@
 - so you can get back to what really matters, messing with your dotfiles lmao
 
 ## Godot/Unity setup with Neovide
-- Obviously you need Neovide before neovim, so go grab that
+- Obviously you need neovim before neovide, so go grab that
 - Here's a cool way to do it
 ```bash
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
@@ -16,6 +16,7 @@ sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
 sudo ln -sf /opt/nvim-linux-x86_64/bin/nvim /usr/local/bin/
 ```
 - Now go get neovide in the same way
+- Make sure to add $HOME/.local/bin to your path if its not there already
 ```bash
 curl -LO https://github.com/neovide/neovide/releases/download/0.15.2/neovide-linux-x86_64.tar.gz
 rm -rf $HOME/.local/bin/neovide-linux-x86_64
