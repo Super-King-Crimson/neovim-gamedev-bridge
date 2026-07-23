@@ -18,8 +18,8 @@ term=${TERMINAL:-x-terminal-emulator}
  # the two cases with one script
  [[ "$godot" == --* ]] && SOCKET="/tmp/neovide-godot.socket"
  
- if ! pgrep -x "neovide" > /dev/null; then
-     # No Neovide process found, so clean up the stale socket if it exists
+ if ! pgrep -x "nvim" > /dev/null; then
+     # No Neovim process found, so clean up the stale socket if it exists
      [ -S "$SOCKET" ] && rm "$SOCKET"
  fi
  
