@@ -27,25 +27,16 @@ sudo mkdir -p /opt/neovide-linux-x86_64
 sudo chmod a+rX /opt/neovide-linux-x86_64
 sudo tar -C /opt -xzf neovide-linux-x86_64.tar.gz
 
-sudo ln -sf /opt/nvim-linux-x86_64/bin/nvim /usr/local/bin/
+sudo ln -sf /opt/neovide /usr/local/bin/
 ```
 
 - Now you gotta go get Unity and Godot 
 - ([one ](https://godotengine.org/download) of these is easier than the other to install...)
-    - if you're on ubuntu or its derivatives this is easy
-    - if you're on debian like me just do this
-```bash
-sudo install -d /etc/apt/keyrings
-curl -fsSL https://hub.unity3d.com/linux/keys/public | sudo gpg --dearmor -o /etc/apt/keyrings/unityhub.gpg
-echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/unityhub.gpg] https://hub.unity3d.com/linux/repos/deb stable main" | sudo tee /etc/apt/sources.list.d/unityhub.list
-
-sudo apt update
-sudo apt install unityhub
-```
-- And if you're on anything else, good luck lmao Unity hates linux
+    - if you're on debian or its derivatives go [here](https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux) to download
+    - Everyone else good luck lmao
 
 ### Aside
-- By the way, if you're just getting into Neovide you'll realize that the `.desktop` file provided by default does NOT load your `.bashrc`
+- By the way, if you're just getting into Neovide you'll realize that the `.desktop` file provided by default does NOT load your `.bashrc` (aliases, etc)
     - If you care about this, I've included a handy little wrapper script that just runs bash in interactive mode then runs neovide
     - Simply download my `/desktop` folder, make `neovide-wrapper.sh` executable, then put it anywhere
     - Go into `Neovide.desktop` and change the `Exec` field to where you put it
